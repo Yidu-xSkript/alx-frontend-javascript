@@ -50,8 +50,6 @@ console.log(createEmployee(200));
 console.log(createEmployee(1000));
 console.log(createEmployee("$500"));
 
-// functions specific to employees
-
 function isDirector(employee: Teacher | Director): boolean {
     return employee instanceof Director;
 }
@@ -66,8 +64,6 @@ function executeWork(employee: Teacher | Director): string {
 
 console.log(executeWork(createEmployee(200)));
 console.log(executeWork(createEmployee(1000)));
-
-// String literal types
 
 type Subjects = "Math" | "History";
 
